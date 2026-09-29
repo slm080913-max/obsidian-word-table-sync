@@ -1,0 +1,165 @@
+.word-review-view {
+  padding: 12px;
+}
+
+.word-review-header {
+  padding-bottom: 12px;
+}
+
+.word-review-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.word-review-title-row h2 {
+  margin: 0;
+}
+
+.word-review-icon-button {
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+
+.word-review-date {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: var(--font-small);
+}
+
+.word-review-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin: 8px 0 10px;
+}
+
+.word-review-stat {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  background: var(--background-secondary);
+}
+
+.word-review-stat-label {
+  color: var(--text-muted);
+  font-size: var(--font-small);
+}
+
+.word-review-stat-value {
+  margin-top: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.word-review-stat.is-overdue .word-review-stat-value {
+  color: var(--text-error);
+}
+
+.word-review-stat.is-today .word-review-stat-value {
+  color: var(--text-accent);
+}
+
+.word-review-action {
+  margin-bottom: 14px;
+}
+
+.word-review-complete-all {
+  width: 100%;
+}
+
+.word-review-section {
+  margin-top: 14px;
+}
+
+.word-review-section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.word-review-section-overdue .word-review-section-heading {
+  color: var(--text-error);
+}
+
+.word-review-section-today .word-review-section-heading {
+  color: var(--text-accent);
+}
+
+.word-review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.word-review-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary-alt);
+}
+
+.word-review-item-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.word-review-word {
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.word-review-word:hover {
+  text-decoration: underline;
+}
+
+.word-review-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  margin-top: 3px;
+  color: var(--text-muted);
+  font-size: var(--font-smallest);
+}
+
+.word-review-complete-button {
+  flex: 0 0 auto;
+}
+
+.word-review-empty {
+  color: var(--text-muted);
+  padding: 8px 2px;
+  font-size: var(--font-small);
+}
+
+.word-review-footer {
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-size: var(--font-smallest);
+  line-height: 1.5;
+}
+
+@media (max-width: 420px) {
+  .word-review-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .word-review-item {
+    align-items: flex-start;
+  }
+}
