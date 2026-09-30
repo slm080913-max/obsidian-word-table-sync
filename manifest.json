@@ -1,7 +1,7 @@
 {
   "id": "word-table-sync",
   "name": "Word Table Sync",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "minAppVersion": "1.7.2",
   "description": "Vocabulary review manager for Markdown tables: automatic table detection, spaced review dates, due/overdue sidebar, archiving, reactivation, and plain-text mobile output.",
   "author": "YJS",
